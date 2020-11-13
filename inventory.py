@@ -6,7 +6,7 @@ import pandas as pd
 from datetime import date
 
 root = Tk()
-root.title("Python: Inventory System")
+root.title("Inventory System")
 
 width = 840
 height = 540
