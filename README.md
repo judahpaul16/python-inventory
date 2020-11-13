@@ -1,8 +1,10 @@
 # Python-Inventory-App-with-Tkinter
 
-![alt text](home_window.png)
+<p align="center">
+    ![alt text](login.png)
+</p>
 
-![alt text](login.png)
+![alt text](home_window.png)
 
 ![alt text](home_window_on_login.png)
 
