@@ -452,12 +452,12 @@ def Delete():
 
 def Export():
 
-        timestamp = date.today().strftime("%m_%d_%Y")
+    timestamp = date.today().strftime("%m_%d_%Y")
 
-        Database()
-        db_df = pd.read_sql_query("SELECT * FROM `product`", conn)
-        db_df.to_csv(f'inventory({timestamp}).csv')
-        tkMessageBox.showinfo('Successful Export', 'Database Successfully Exported')
+    Database()
+    db_df = pd.read_sql_query("SELECT * FROM `product`", conn)
+    db_df.to_csv(f'inventory({timestamp}).csv')
+    tkMessageBox.showinfo('Successful Export', 'Database Successfully Exported')
 
 if __name__ == '__main__':
     main()
