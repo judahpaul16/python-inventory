@@ -1,4 +1,4 @@
-# Python-Inventory-App-with-Tkinter
+# Inventory-App-with-Python-Tkinter-Module
 
 <p align="center">
     <img src=login.png>
