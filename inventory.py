@@ -1,4 +1,9 @@
-from tkinter import *
+from tkinter import \
+    Tk, Toplevel, Frame, \
+    Menu, Scrollbar, Button, \
+    Label, Entry, \
+    StringVar, IntVar, \
+    SOLID, TOP, BOTTOM, LEFT, RIGHT, CENTER, HORIZONTAL, VERTICAL, W, X, Y
 import tkinter.messagebox as tkMessageBox
 import sqlite3
 import tkinter.ttk as ttk
@@ -138,8 +143,7 @@ def Logout():
 
     result = tkMessageBox.askquestion('Inventory System', 'Are you sure you want to logout?', icon="warning")
 
-    if result == 'yes': 
-        admin_id = ""
+    if result == 'yes':
         Home.withdraw()
         root.deiconify()
 
@@ -399,11 +403,11 @@ def ViewForm():
     tree.heading('Product Qty', text="Qty",anchor=W)
     tree.heading('Product Price', text="Price",anchor=W)
     tree.heading('ID / Barcode', text="ID / Barcode",anchor=W)
-    tree.column('#0', stretch=YES, minwidth=0, width=0)
-    tree.column('#1', stretch=YES, minwidth=0, width=200)
-    tree.column('#2', stretch=YES, minwidth=0, width=75)
-    tree.column('#3', stretch=YES, minwidth=0, width=75)
-    tree.column('#4', stretch=YES, minwidth=0, width=175)
+    tree.column('#0', stretch=True, minwidth=0, width=0)
+    tree.column('#1', stretch=True, minwidth=0, width=200)
+    tree.column('#2', stretch=True, minwidth=0, width=75)
+    tree.column('#3', stretch=True, minwidth=0, width=75)
+    tree.column('#4', stretch=True, minwidth=0, width=175)
     tree.pack()
     DisplayData()
 
