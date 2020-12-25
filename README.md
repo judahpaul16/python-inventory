@@ -1,4 +1,5 @@
 # Inventory-App-with-Python-Tkinter-Module
+A simple python inventory app using SQLite and tkinter. Compatible with bar code scanners.
 
 <p align="center">
     <img src=login.png>
